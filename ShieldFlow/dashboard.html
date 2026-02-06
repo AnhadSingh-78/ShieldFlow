@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShieldFlow Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+  
+  <aside class="sidebar">
+    <h2 class="logo">ShieldFlow</h2>
+    <nav>
+      <a class="active">Overview</a>
+      <a>Alerts</a>
+      <a>Risk Score</a>
+      <a>Settings</a>
+    </nav>
+  </aside>
+
+ 
+  <main class="main">
+    <h1>Dashboard Overview</h1>
+
+    
+    <div class="stats">
+      <div class="stat-card">
+        <p>Uptime</p>
+        <h2 id="uptime">0%</h2>
+      </div>
+      <div class="stat-card">
+        <p>Active Alerts</p>
+        <h2 id="alerts">0</h2>
+      </div>
+      <div class="stat-card">
+        <p>Risk Score</p>
+        <h2 id="risk">0</h2>
+      </div>
+    </div>
+
+ 
+    <div class="charts">
+      <div class="chart-card">
+        <h3>Alerts Timeline</h3>
+        <div class="chart-placeholder"></div>
+      </div>
+      <div class="chart-card">
+        <h3>System Activity</h3>
+        <div class="chart-placeholder"></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
